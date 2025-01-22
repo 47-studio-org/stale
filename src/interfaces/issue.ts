@@ -8,8 +8,9 @@ export interface IIssue {
   number: number;
   created_at: IsoDateString;
   updated_at: IsoDateString;
+  draft: boolean;
   labels: ILabel[];
-  pull_request?: Object | null;
+  pull_request?: object | null;
   state: string;
   locked: boolean;
   milestone?: IMilestone | null;
